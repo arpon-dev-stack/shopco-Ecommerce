@@ -1,7 +1,9 @@
 
 function LandingPage() {
   return (
-    <div>LandingPage</div>
+    <main className="pt-[116px] sm:pt-[120px]">
+      <h1>Landing Page</h1>
+    </main>
   )
 }
 
