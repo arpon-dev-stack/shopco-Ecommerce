@@ -10,8 +10,8 @@ import jacket from './jacket.webp';
 import jeansmen from './jeansmen.webp';
 import left from './left.svg';
 import right from './right.svg';
-import logo from './logo.webp';
-import logowin from './logowin.webp';
+import logo from './logo.png';
+import logowin from './logowin.png';
 import mail from './mail.svg';
 import menu from './menu.svg';
 import phone from './phone.svg';
@@ -40,6 +40,7 @@ import game1 from './game1.webp';
 import game2 from './game2.webp';
 import game3 from './game3.webp';
 import formalshoes from './formalshoes.webp';
+import cart from './cart.svg'
 
 export {
     search,
@@ -50,6 +51,7 @@ export {
     logowin,
     left,
     right,
+    cart
 }
 
 export const products = {
