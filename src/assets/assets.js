@@ -40,7 +40,10 @@ import game1 from './game1.webp';
 import game2 from './game2.webp';
 import game3 from './game3.webp';
 import formalshoes from './formalshoes.webp';
-import cart from './cart.svg'
+import cart from './cart.svg';
+import gamerbanner from './gamerbanner.webp';
+import winterdeals from './winterdeals.webp';
+import electronics from './electronics.webp';
 
 export {
     search,
@@ -54,8 +57,7 @@ export {
     cart
 }
 
-export const products = {
-    greatDeals: [
+export const products = [
         {
             seasonName: "Winter Deals",
             products: [
@@ -147,4 +149,20 @@ export const products = {
         }
     ]
 
-}
+export const banner = [
+    {
+        src: gamerbanner,
+        id: 0,
+        alt: "gamersproducts"
+    },
+    {
+        src: winterdeals,
+        id: 1,
+        alt: "winterclothings"
+    },
+    {
+        src: electronics,
+        id: 2,
+        alt: "electronics"
+    }
+]

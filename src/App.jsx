@@ -3,12 +3,15 @@ import Navbar from './components/Navbars/Navbar'
 import LandingPage from './pages/LandingPage/LandingPage'
 import CartPage from './pages/CartPage/CartPage'
 import AbminPage from './pages/AdminPage/AbminPage'
+import { useState } from 'react'
 
 function App() {
+  const [scrollStart, setScrollStart] = useState(false);
+
   return (
     <Routes>
       <Route path="/" element={<Navbar />}>
-        <Route index element={<LandingPage />} />
+        <Route index element={<LandingPage scrollStart={scrollStart} setScrollStart={setScrollStart}/>} />
         <Route path="cart" element={<CartPage />} />
         <Route path="admin" element={<AbminPage />} />
       </Route>
