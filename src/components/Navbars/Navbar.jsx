@@ -1,16 +1,29 @@
 import { Outlet, Link } from "react-router"
 import { logo, logowin } from "../../assets/assets"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 function Navbar() {
   const [isHome, setIsHome] = useState(true);
+  const [scrollStart, setScrollStart] = useState(false);
+
+    useEffect(() => {
+      window.addEventListener("scroll", () => {
+        window.scrollY < 32 ? setScrollStart(false) : setScrollStart(true);
+  
+        return () => {
+          window.removeEventListener("scroll", () => {
+            setScrollStart(false)
+          })
+        }
+      })
+    })
 
   return (
     <>
-      <header className="fixed w-full">
-        <div className="py-1 flex items-center gap-2 sm:gap-4 justify-between px-4 sm:px-7 lg:px-10 bg-amber-50 relative z-10">
+      <header className="fixed w-full z-30">
+        <div className="py-1 flex items-center gap-2 sm:gap-4 justify-between px-4 sm:px-7 z-20 lg:px-10 bg-amber-50 relative">
           <Link to="/" className="flex items-center gap-3 shrink-0 outline-none" onClick={() => setIsHome(true)}>
-            <img src={logo} alt="logo" className="sm:h-12 h-11 w-auto sm:p-0 p-0.5" />
+            <img src={logo} alt="logo" className="sm:h-12 h-8 w-auto" />
             <img src={logowin} alt="biglogo" className="h-8 pt-1 w-auto hidden sm:block" />
           </Link>
           <div className="flex gap-5 items-center">
@@ -40,7 +53,7 @@ function Navbar() {
             </ul>
           </div>
         </div>
-        <nav className={`bg-amber-100 ${isHome ? 'translate-y-0' : '-translate-y-full'} transition-all duration-300 relative z-0 flex justify-center py-1`}>
+        <nav className={`bg-amber-100 ${isHome ? 'translate-y-0' : '-translate-y-full'} transition-all duration-300 relative z-10 flex justify-center py-1`} style={{transform: `translateY(${ isHome ?  scrollStart ? "-100" : "0" : "-100" }%)`}}>
           <form className="flex sm:hidden items-center overflow-hidden h-11 sm:h-auto mx-2 w-auto shrink">
             <input type="search" placeholder="Search your product..." className="border text-[#af4b02] min-w-24 shrink border-l-[#e18544] border-t-[#e18544] border-b-[#e18544] font-sans outline-none px-2 rounded-tl-sm rounded-bl-sm h-full font-semibold overflow-hidden bg-amber-100" />
             <button className="h-full w-11 flex justify-center shrink-0 items-center overflow-hidden rounded-tr-sm rounded-br-sm bg-[#e18544] outline-none">

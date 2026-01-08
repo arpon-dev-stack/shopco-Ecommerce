@@ -6,12 +6,11 @@ import AbminPage from './pages/AdminPage/AbminPage'
 import { useState } from 'react'
 
 function App() {
-  const [scrollStart, setScrollStart] = useState(false);
 
   return (
     <Routes>
       <Route path="/" element={<Navbar />}>
-        <Route index element={<LandingPage scrollStart={scrollStart} setScrollStart={setScrollStart}/>} />
+        <Route index element={<LandingPage />} />
         <Route path="cart" element={<CartPage />} />
         <Route path="admin" element={<AbminPage />} />
       </Route>
