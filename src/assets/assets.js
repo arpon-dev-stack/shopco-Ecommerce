@@ -82,87 +82,87 @@ export const products = [
             { id: 4, src: pan }
         ]
     },
-    {
-        categoryName: "Computers",
-        id: 4,
-        products: [
-            { id: 1, src: cpu },
-            { id: 2, src: gpu },
-            { id: 3, src: monitor },
-            { id: 4, src: motherboard }
-        ]
-    },
-    {
-        categoryName: "Gaming",
-        id: 5,
-        products: [
-            { id: 1, src: console },
-            { id: 2, src: game1 },
-            { id: 3, src: game2 },
-            { id: 4, src: game3 }
-        ]
-    },
-    {
-        categoryName: "Electronics",
-        id: 2,
-        products: [
-            { id: 1, src: smartphone },
-            { id: 2, src: earbud },
-            { id: 3, src: headphone }
-        ]
-    },
-    {
-        categoryName: "Fashion",
-        id: 7,
-        products: [
-            { id: 1, src: watch },
-            { id: 2, src: cap },
-            { id: 3, src: shoes }
-        ]
-    },
-    {
-        categoryName: "Formal Clothings",
-        id: 8,
-        products: [
-            { id: 1, src: formalware },
-            { id: 2, src: formalpant },
-            { id: 3, src: formalshoes }
-        ]
-    },
-    {
-        categoryName: "Clothings",
-        id: 9,
-        products: [
-            { id: 1, src: tshirt },
-            { id: 2, src: jeansmen },
-            { id: 3, src: glasses }
-        ]
-    },
-    {
-        categoryName: "Traveller Choices",
-        id: 11,
-        products: [
-            { id: 1, src: travellbag },
-            { id: 2, src: travellbag2 },
-            { id: 3, src: travellshoe }
-        ]
-    },
-    {
-        categoryName: "Combo Deals",
-        id: 10,
-        products: [
-            { id: 1, src: combomen },
-            { id: 2, src: combowomen }
-        ]
-    },
+    // {
+    //     categoryName: "Computers",
+    //     id: 4,
+    //     products: [
+    //         { id: 1, src: cpu },
+    //         { id: 2, src: gpu },
+    //         { id: 3, src: monitor },
+    //         { id: 4, src: motherboard }
+    //     ]
+    // },
+    // {
+    //     categoryName: "Gaming",
+    //     id: 5,
+    //     products: [
+    //         { id: 1, src: console },
+    //         { id: 2, src: game1 },
+    //         { id: 3, src: game2 },
+    //         { id: 4, src: game3 }
+    //     ]
+    // },
+    // {
+    //     categoryName: "Electronics",
+    //     id: 2,
+    //     products: [
+    //         { id: 1, src: smartphone },
+    //         { id: 2, src: earbud },
+    //         { id: 3, src: headphone }
+    //     ]
+    // },
+    // {
+    //     categoryName: "Fashion",
+    //     id: 7,
+    //     products: [
+    //         { id: 1, src: watch },
+    //         { id: 2, src: cap },
+    //         { id: 3, src: shoes }
+    //     ]
+    // },
+    // {
+    //     categoryName: "Formal Clothings",
+    //     id: 8,
+    //     products: [
+    //         { id: 1, src: formalware },
+    //         { id: 2, src: formalpant },
+    //         { id: 3, src: formalshoes }
+    //     ]
+    // },
+    // {
+    //     categoryName: "Clothings",
+    //     id: 9,
+    //     products: [
+    //         { id: 1, src: tshirt },
+    //         { id: 2, src: jeansmen },
+    //         { id: 3, src: glasses }
+    //     ]
+    // },
+    // {
+    //     categoryName: "Traveller Choices",
+    //     id: 11,
+    //     products: [
+    //         { id: 1, src: travellbag },
+    //         { id: 2, src: travellbag2 },
+    //         { id: 3, src: travellshoe }
+    //     ]
+    // },
+    // {
+    //     categoryName: "Combo Deals",
+    //     id: 10,
+    //     products: [
+    //         { id: 1, src: combomen },
+    //         { id: 2, src: combowomen }
+    //     ]
+    // },
 
-    {
-        categoryName: "Pharmaceuticals",
-        id: 6,
-        products: [
-            { id: 1, src: pharmaceutical }
-        ]
-    }
+    // {
+    //     categoryName: "Pharmaceuticals",
+    //     id: 6,
+    //     products: [
+    //         { id: 1, src: pharmaceutical }
+    //     ]
+    // }
 
 ]
 
