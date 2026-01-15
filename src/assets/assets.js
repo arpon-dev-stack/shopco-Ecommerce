@@ -32,7 +32,7 @@ import earmuff from './earmuff.webp';
 import cpu from './cpu.webp';
 import monitor from './monitor.webp';
 import gpu from './gpu.webp';
-import console from './gameconsole.webp';
+import gameConsole from './gameconsole.webp';
 import motherboard from './motherboard.webp';
 import pharmaceutical from './pharmaceutical.webp';
 import plate from './plate.webp';
@@ -61,71 +61,78 @@ export {
     cart
 }
 
+export {
+    gameConsole
+}
+
 export const kitchenProducts = [
-    { id: 1, src: mixer, alt: "mixer" },
-    { id: 2, src: cooker, alt: "cooker" },
-    { id: 3, src: pan, alt: "pan" },
-    { id: 4, src: plate, alt: "plate" }
+    { id: 1, src: mixer, alt: "mixer", priority: true },
+    { id: 2, src: cooker, alt: "cooker", priority: true },
+    { id: 3, src: pan, alt: "pan", priority: false },
+    { id: 4, src: plate, alt: "plate", priority: false }
 ];
 
 export const computerProducts = [
-    { id: 1, src: cpu, alt: "cpu" },
-    { id: 2, src: gpu, alt: "gpu" },
-    { id: 3, src: monitor, alt: "monitor" },
-    { id: 4, src: motherboard, alt: "motherboard" }
+    { id: 1, src: cpu, alt: "cpu", priority: true },
+    { id: 2, src: gpu, alt: "gpu", priority: true },
+    { id: 3, src: monitor, alt: "monitor", priority: false },
+    { id: 4, src: motherboard, alt: "motherboard", priority: false }
 ];
 
 export const gamingProducts = [
-    { id: 1, src: console, alt: "console" },
-    { id: 2, src: game1, alt: "game1" },
-    { id: 3, src: game2, alt: "game2" },
-    { id: 4, src: game3, alt: "game3" }
+    { id: 1, src: gameConsole, alt: "gameConsole", priority: false },
+    { id: 2, src: game1, alt: "game1", priority: false },
+    { id: 3, src: game2, alt: "game2", priority: false },
+    { id: 4, src: game3, alt: "game3", priority: false }
 ];
 
 export const electronicsProducts = [
-    { id: 1, src: smartphone, alt: "smartphone" },
-    { id: 2, src: earbud, alt: "earbud" },
-    { id: 3, src: headphone, alt: "headphone" }
+    { id: 1, src: smartphone, alt: "smartphone", priority: false },
+    { id: 2, src: earbud, alt: "earbud", priority: false },
+    { id: 3, src: headphone, alt: "headphone", priority: false },
+    { id: 4, src: watch, alt: "watch", priority: false },
 ];
 
 export const fashionProducts = [
-    { id: 1, src: watch, alt: "watch" },
-    { id: 2, src: cap, alt: "cap" },
-    { id: 3, src: shoes, alt: "shoes" }
+    { id: 1, src: cap, alt: "cap", priority: false },
+    { id: 2, src: shoes, alt: "shoes", priority: false },
+    { id: 3, src: glasses, alt: "glasses", priority: false }
 ];
 
 export const formalClothings = [
-    { id: 1, src: formalware, alt: "formalware" },
-    { id: 2, src: formalpant, alt: "formalpant" },
-    { id: 3, src: formalshoes, alt: "formalshoes" }
+    { id: 1, src: formalware, alt: "formalware", priority: false },
 ];
 
 export const clothings = [
-    { id: 1, src: tshirt, alt: "tshirt" },
-    { id: 2, src: jeansmen, alt: "jeansmen" },
-    { id: 3, src: glasses, alt: "glasses" }
+    { id: 1, src: tshirt, alt: "tshirt", priority: false },
+    { id: 2, src: jeansmen, alt: "jeansmen", priority: false },
+    { id: 3, src: formalpant, alt: "formalpant", priority: false },
+    { id: 4, src: formalshoes, alt: "formalshoes", priority: false }
 ];
 
 export const travellerChoices = [
-    { id: 1, src: travellbag, alt: "travellbag" },
-    { id: 2, src: travellbag2, alt: "travellbag2" },
-    { id: 3, src: travellshoe, alt: "travellshoe" }
+    { id: 3, src: travellshoe, alt: "travellshoe", priority: false },
+    { id: 1, src: pharmaceutical, alt: "pharmaceutical", priority: false },
+    { id: 2, src: formalware, alt: "formalware", priority: false },
+    { id: 4, src: earmuff, alt: "earmuff", priority: false }
 ];
 
 export const comboDeals = [
-    { id: 1, src: combomen, alt: "combomen" },
-    { id: 2, src: combowomen, alt: "combowomen" }
+    { id: 1, src: combomen, alt: "combomen", priority: true },
+    { id: 2, src: combowomen, alt: "combowomen", priority: true },
+    { id: 3, src: travellbag, alt: "travellbag", priority: false },
+    { id: 4, src: travellbag2, alt: "travellbag2", priority: false },
 ];
 
 export const pharmaceuticals = [
-    { id: 1, src: pharmaceutical, alt: "pharmaceutical" }
+    { id: 1, src: pharmaceutical, alt: "pharmaceutical", priority: false }
 ];
 
 export const winterClothings = [
-    { id: 1, src: jacket, alt: "jacket" },
-    { id: 2, src: womenjacket, alt: "womenjacket" },
-    { id: 3, src: babyjacket, alt: "babyjacket" },
-    { id: 4, src: earmuff, alt: "earmuff" }
+    { id: 1, src: jacket, alt: "jacket", priority: true },
+    { id: 2, src: womenjacket, alt: "womenjacket", priority: true },
+    { id: 3, src: babyjacket, alt: "babyjacket", priority: false },
+    { id: 4, src: earmuff, alt: "earmuff", priority: false }
 ];
 
 export const banner = [

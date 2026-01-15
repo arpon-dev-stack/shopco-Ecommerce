@@ -1,13 +1,14 @@
+import { memo } from "react"
 
 function HighlightedProduct({ products, categoryName }) {
     return (
-        <div className="flex flex-col mt-1 items-start w-full">
-            <h1 className="text-center mt-1 font-semibold text-3xl">{categoryName}</h1>
-            <div className="flex self-center gap-4 mt-2">
+        <div className=" bg-[#e18544] p-2 rounded-sm">
+            <h1 className="text-center font-semibold text-xl">{categoryName}</h1>
+            <div className="p-2 grid grid-cols-2 grid-rows-2 gap-4 w-full">
                 {products.map(product => {
                     return (
-                        <div className="max-w-40 h-auto rounded-sm hover:scale-105" key={product.id}>
-                            <img src={product.src} className="w-full h-auto rounded-sm" alt={product.alt} />
+                        <div className=" w-full aspect-square" key={product.id}>
+                            <img src={product.src} className="w-full aspect-square object-cover" alt={product.alt} />
                         </div>
                     )
                 })}
@@ -16,4 +17,4 @@ function HighlightedProduct({ products, categoryName }) {
     )
 }
 
-export default HighlightedProduct
+export default memo(HighlightedProduct);
